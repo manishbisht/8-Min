@@ -58,11 +58,14 @@ console.log('Welcome!  Fetching your information.... ');
         'Thanks for logging in, ' + response.name + ' !!';
 	  document.getElementById('Login').style.display="none";
     });
-   FB.login(function(){
+   
+}
+function post()
+{
+FB.login(function(){
   FB.api('/me/feed', 'post', {message: 'Hello !! I have find 8 Mix app useful for Mix news :)'});
 }, {scope: 'publish_actions'});
 }
-
 </script>
 <body style="margin-top:20px;">
 <div class="container">
@@ -78,6 +81,8 @@ console.log('Welcome!  Fetching your information.... ');
       <fb:login-button scope="public_profile" onlogin="checkLoginState();">
       </fb:login-button>
       </div>
+	  <br>
+	  <div class="bg-primary btn-lg" style="max-width:400px;">Post Welcome message on Timeline</div>
       <div id="status">
       </div>
    </div>
