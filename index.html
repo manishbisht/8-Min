@@ -3,6 +3,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>8 Min App for mix news on Facebook</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:url"                content="http://manishbisht.github.io/8-Min/" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="8 Min App for Mix News on Facebook" />
+<meta property="og:description"        content="Designed, Developed and Maintained by Manish Bisht" />
+<meta property="og:image"              content="http://manishbisht.github.io/8-Min/images/logo-large.jpg" />
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/design.css" rel="stylesheet">
 <link rel="icon" 
@@ -62,9 +67,10 @@ console.log('Welcome!  Fetching your information.... ');
 }
 function post()
 {
-FB.login(function(){
-  FB.api('/me/feed', 'post', {message: 'Hello !! I have find 8 Mix app useful for Mix news :)'});
-}, {scope: 'publish_actions'});
+FB.ui({
+  method: 'share',
+  href: 'http://manishbisht.github.io/8-Min/',
+}, function(response){});
 }
 </script>
 <body style="margin-top:20px;">
@@ -78,7 +84,7 @@ FB.login(function(){
    </div>
    <div class="col-md-12">
       <div id="Login">
-      <fb:login-button scope="public_profile" onlogin="checkLoginState();">
+      <fb:login-button scope="public_profile,publish_actions" onlogin="checkLoginState();">
       </fb:login-button>
       </div>
 	  <br>
