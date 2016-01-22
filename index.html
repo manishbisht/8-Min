@@ -78,28 +78,6 @@ FB.ui({
   href: 'http://manishbisht.github.io/8-Min/',
 }, function(response){});
 }
-function postLike() {
-    FB.api(
-       'https://graph.facebook.com/me/og.likes',
-       'post',
-       { object: objectToLike,
-         privacy: {'value': 'SELF'} },
-       function(response) {
-         if (!response) {
-           alert('Error occurred.');
-         } else if (response.error) {
-           document.getElementById('result').innerHTML =
-             'Error: ' + response.error.message;
-         } else {
-           document.getElementById('result').innerHTML =
-             '<a href=\"https://www.facebook.com/me/activity/' +
-             response.id + '\">' +
-             'Story created.  ID is ' +
-             response.id + '</a>';
-         }
-       }
-    );
-  }
 </script>
 <body style="margin-top:20px;">
 <div class="container">
@@ -112,14 +90,13 @@ function postLike() {
    </div>
    <div class="col-md-12">
       <div id="Login">
-      <fb:login-button scope="public_profile,publish_actions" onlogin="checkLoginState();">
+      <fb:login-button scope="public_profile" onlogin="checkLoginState();">
       </fb:login-button>
       </div>
 	  <br>
-	  <div class="bg-primary btn-lg" style="max-width:400px;" onClick="postLike();">Post Welcome message on Timeline</div>
+	  <div class="bg-primary btn-lg" style="max-width:400px;" onClick="post();">Post Welcome message on Timeline</div>
       <div id="status">
       </div>
-	  <div id="result"></div>
    </div>
    <div class="col-md-12 footer">
       <h4>&copy;2016 | <a href="Privacy Policy.html">Privacy Policy</a></h4>
