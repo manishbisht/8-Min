@@ -78,9 +78,72 @@ console.log('Welcome!  Fetching your information.... ');
 	  document.getElementById('content').style.display="block";
     });
 }
-function post(text)
+function post1()
 {
-FB.api('/me/feed', 'post', { message: text }, function(response) {
+FB.api('/me/feed', 'post', { message: "Motorola has launched the Moto X Force smartphone in India, with a starting price of Rs. 49,999 for the 32GB variant, and Rs. 53,999 for the 64GB variant." }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID : ' + response.id);
+  }
+});
+function post2()
+{
+FB.api('/me/feed', 'post', { message: "Chinese electronics firm LeEco today said it will start selling its latest 4G smartphone Le 1s at subsidised rates on Flipkart from tomorrow." }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
+function post3()
+{
+FB.api('/me/feed', 'post', { message: "If you own the latest iPhone, travel overseas frequently and flaunt multiple credit cards, it's likely that you will subscribe to Netflix." }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
+function post4()
+{
+FB.api('/me/feed', 'post', { message: "The much anticipated smartphone from Huawei, the Honor 5X is officially available for purchase in India via online e-commerce sites Flipkart and Amazon." }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
+function post5()
+{
+FB.api('/me/feed', 'post', { message: "BMW is all set to launch its all-new 7 Series luxury sedan and all-new X1 in India at the upcoming Auto Expo 2016. The new BMW 7 Series will bring with it, 'unmatched luxury and technical innovation', without sacrificing on dynamic performance." }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
+function post6()
+{
+FB.api('/me/feed', 'post', { message: "In a marked departure, the Telecom Regulatory Authority of India (Trai) has recommended a public-private partnership (PPP) model and a bigger private sector role in speedily implementing the national broadband project." }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
+function post7()
+{
+FB.api('/me/feed', 'post', { message: "German auto major Volkswagen today launched updated versions of its popular models Polo and Vento in India, priced between Rs 5.33 lakh to Rs 12.13 lakh (ex-showroom Delhi)." }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
+function post8()
+{
+FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow." }, function(response) {
   if (!response || response.error) {
     alert('Error occured');
   } else {
@@ -117,28 +180,51 @@ FB.api('/me/feed', 'post', { message: text }, function(response) {
    <div class="col-md-3 a"><div class="box">
    <h4 style="margin-top:0">Moto X Force With ShatterShield Launched in India</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">Motorola has launched the Moto X Force smartphone in India, with a starting price of Rs. 49,999 for the 32GB variant, and Rs. 53,999 for the 64GB variant.</p>
-   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(Motorola has launched the Moto X Force smartphone in India, with a starting price of Rs. 49,999 for the 32GB variant, and Rs. 53,999 for the 64GB variant.);">Post on Facebook</div>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post1();">Post on Facebook</div>
    </div>
    </div>
    <div class="col-md-3 a"><div class="box">
    <h4 style="margin-top:0">LeEco to sell subsidised Le 1s smartphone on Flipkart tomorrow</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">Chinese electronics firm LeEco today said it will start selling its latest 4G smartphone Le 1s at subsidised rates on Flipkart from tomorrow.</p>
-   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(Chinese electronics firm LeEco today said it will start selling its latest 4G smartphone Le 1s at subsidised rates on Flipkart from tomorrow.);">Post on Facebook</div>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post2();">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Netflix is for premium customers in India, says company</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">If you own the latest iPhone, travel overseas frequently and flaunt multiple credit cards, it's likely that you will subscribe to Netflix.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post3();">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Huawei Honor 5X goes on sale in India; available on Flipkart, Amazon</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">The much anticipated smartphone from Huawei, the Honor 5X is officially available for purchase in India via online e-commerce sites Flipkart and Amazon.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post4();">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Auto Expo 2016: BMW to Launch All-New 7 Series and X1</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">BMW is all set to launch its all-new 7 Series luxury sedan and all-new X1 in India at the upcoming Auto Expo 2016. The new BMW 7 Series will bring with it, 'unmatched luxury and technical innovation', without sacrificing on dynamic performance.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post5();">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Trai recommends PPP model for BharatNet launch</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">In a marked departure, the Telecom Regulatory Authority of India (Trai) has recommended a public-private partnership (PPP) model and a bigger private sector role in speedily implementing the national broadband project.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post6();">Post on Facebook</div>
    </div>
    </div>
    <div class="col-md-3 a"><div class="box">
    <h4 style="margin-top:0">Volkswagen launches updated versions of Polo, Vento in India</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">German auto major Volkswagen today launched updated versions of its popular models Polo and Vento in India, priced between Rs 5.33 lakh to Rs 12.13 lakh (ex-showroom Delhi).</p>
-   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(German auto major Volkswagen today launched updated versions of its popular models Polo and Vento in India, priced between Rs 5.33 lakh to Rs 12.13 lakh (ex-showroom Delhi).);">Post on Facebook</div>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post7();">Post on Facebook</div>
    </div>
    </div>
    <div class="col-md-3 a"><div class="box">
    <h4 style="margin-top:0">Gionee P5W launched in India at a budget price of Rs. 6499</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow.</p>
-   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow.);">Post on Facebook</div>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post();">Post on Facebook</div>
    </div>
    </div>
-   
 </div>
 
 <div class="container">
