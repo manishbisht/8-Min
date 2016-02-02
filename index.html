@@ -75,7 +75,6 @@ console.log('Welcome!  Fetching your information.... ');
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + ' !!';
 	  document.getElementById('Login').style.display="none";
-	  document.getElementById('content').style.display="block";
     });
 }
 function post1()
@@ -87,6 +86,7 @@ FB.api('/me/feed', 'post', { message: "Motorola has launched the Moto X Force sm
     alert('Post ID : ' + response.id);
   }
 });
+}
 function post2()
 {
 FB.api('/me/feed', 'post', { message: "Chinese electronics firm LeEco today said it will start selling its latest 4G smartphone Le 1s at subsidised rates on Flipkart from tomorrow." }, function(response) {
@@ -96,6 +96,7 @@ FB.api('/me/feed', 'post', { message: "Chinese electronics firm LeEco today said
     alert('Post ID: ' + response.id);
   }
 });
+}
 function post3()
 {
 FB.api('/me/feed', 'post', { message: "If you own the latest iPhone, travel overseas frequently and flaunt multiple credit cards, it's likely that you will subscribe to Netflix." }, function(response) {
@@ -105,6 +106,7 @@ FB.api('/me/feed', 'post', { message: "If you own the latest iPhone, travel over
     alert('Post ID: ' + response.id);
   }
 });
+}
 function post4()
 {
 FB.api('/me/feed', 'post', { message: "The much anticipated smartphone from Huawei, the Honor 5X is officially available for purchase in India via online e-commerce sites Flipkart and Amazon." }, function(response) {
@@ -114,6 +116,7 @@ FB.api('/me/feed', 'post', { message: "The much anticipated smartphone from Huaw
     alert('Post ID: ' + response.id);
   }
 });
+}
 function post5()
 {
 FB.api('/me/feed', 'post', { message: "BMW is all set to launch its all-new 7 Series luxury sedan and all-new X1 in India at the upcoming Auto Expo 2016. The new BMW 7 Series will bring with it, 'unmatched luxury and technical innovation', without sacrificing on dynamic performance." }, function(response) {
@@ -123,6 +126,7 @@ FB.api('/me/feed', 'post', { message: "BMW is all set to launch its all-new 7 Se
     alert('Post ID: ' + response.id);
   }
 });
+}
 function post6()
 {
 FB.api('/me/feed', 'post', { message: "In a marked departure, the Telecom Regulatory Authority of India (Trai) has recommended a public-private partnership (PPP) model and a bigger private sector role in speedily implementing the national broadband project." }, function(response) {
@@ -132,6 +136,7 @@ FB.api('/me/feed', 'post', { message: "In a marked departure, the Telecom Regula
     alert('Post ID: ' + response.id);
   }
 });
+}
 function post7()
 {
 FB.api('/me/feed', 'post', { message: "German auto major Volkswagen today launched updated versions of its popular models Polo and Vento in India, priced between Rs 5.33 lakh to Rs 12.13 lakh (ex-showroom Delhi)." }, function(response) {
@@ -141,6 +146,7 @@ FB.api('/me/feed', 'post', { message: "German auto major Volkswagen today launch
     alert('Post ID: ' + response.id);
   }
 });
+}
 function post8()
 {
 FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow." }, function(response) {
@@ -176,7 +182,7 @@ FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched la
    </center>
 </div>
 
-<div class="container" align="center" id="content" style="display:none">
+<div class="container" align="center">
    <div class="col-md-3 a"><div class="box">
    <h4 style="margin-top:0">Moto X Force With ShatterShield Launched in India</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">Motorola has launched the Moto X Force smartphone in India, with a starting price of Rs. 49,999 for the 32GB variant, and Rs. 53,999 for the 64GB variant.</p>
@@ -222,7 +228,7 @@ FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched la
    <div class="col-md-3 a"><div class="box">
    <h4 style="margin-top:0">Gionee P5W launched in India at a budget price of Rs. 6499</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow.</p>
-   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post();">Post on Facebook</div>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post8();">Post on Facebook</div>
    </div>
    </div>
 </div>
