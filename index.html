@@ -75,6 +75,7 @@ console.log('Welcome!  Fetching your information.... ');
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + ' !!';
 	  document.getElementById('Login').style.display="none";
+	  document.getElementById('content').style.display="block";
     });
 }
 function post1()
@@ -182,7 +183,7 @@ FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched la
    </center>
 </div>
 
-<div class="container" align="center">
+<div class="container" align="center" id="content" style="display:none">
    <div class="col-md-3 a"><div class="box">
    <h4 style="margin-top:0">Moto X Force With ShatterShield Launched in India</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">Motorola has launched the Moto X Force smartphone in India, with a starting price of Rs. 49,999 for the 32GB variant, and Rs. 53,999 for the 64GB variant.</p>
@@ -202,7 +203,7 @@ FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched la
    </div>
    </div>
    <div class="col-md-3 a"><div class="box">
-   <h4 style="margin-top:0">Huawei Honor 5X goes on sale in India; available on Flipkart, Amazon</h4>
+   <h4 style="margin-top:0">Huawei Honor 5X goes on sale in India; available Online</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">The much anticipated smartphone from Huawei, the Honor 5X is officially available for purchase in India via online e-commerce sites Flipkart and Amazon.</p>
    <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post4();">Post on Facebook</div>
    </div>
@@ -214,13 +215,7 @@ FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched la
    </div>
    </div>
    <div class="col-md-3 a"><div class="box">
-   <h4 style="margin-top:0">Trai recommends PPP model for BharatNet launch</h4>
-   <p style="margin-left:5px;margin-right:5px;margin-top:0">In a marked departure, the Telecom Regulatory Authority of India (Trai) has recommended a public-private partnership (PPP) model and a bigger private sector role in speedily implementing the national broadband project.</p>
-   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post6();">Post on Facebook</div>
-   </div>
-   </div>
-   <div class="col-md-3 a"><div class="box">
-   <h4 style="margin-top:0">Volkswagen launches updated versions of Polo, Vento in India</h4>
+   <h4 style="margin-top:0">Volkswagen launches updated versions of Polo, Vento in Delhi, India</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">German auto major Volkswagen today launched updated versions of its popular models Polo and Vento in India, priced between Rs 5.33 lakh to Rs 12.13 lakh (ex-showroom Delhi).</p>
    <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post7();">Post on Facebook</div>
    </div>
@@ -229,6 +224,12 @@ FB.api('/me/feed', 'post', { message: "Chinese Tech major Gionee has launched la
    <h4 style="margin-top:0">Gionee P5W launched in India at a budget price of Rs. 6499</h4>
    <p style="margin-left:5px;margin-right:5px;margin-top:0">Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow.</p>
    <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post8();">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Trai recommends PPP model for BharatNet launch</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">In a marked departure, the Telecom Regulatory Authority of India (Trai) has recommended a public-private partnership (PPP) model and a bigger private sector role in speedily implementing the national broadband project.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post6();">Post on Facebook</div>
    </div>
    </div>
 </div>
