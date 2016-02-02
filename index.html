@@ -15,6 +15,19 @@
       href="images/logo.jpg"
       sizes="16x16">
 </head>
+<style>
+.box{
+	box-shadow: 0px 1px 5px #999999;
+	padding-top:10px;
+	padding-bottom:1px;
+	margin-bottom:10px;
+	border-radius:10px;
+	margin-left:10px;
+	}
+	.a{
+		padding:0;
+	}
+</style>
 <script>
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -62,11 +75,12 @@ console.log('Welcome!  Fetching your information.... ');
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + ' !!';
 	  document.getElementById('Login').style.display="none";
+	  document.getElementById('content').style.display="block";
     });
 }
-function post()
+function post(text)
 {
-FB.api('/me/feed', 'post', { message: "Welcome to 8-Min App | App for Mixed news on Facebook" }, function(response) {
+FB.api('/me/feed', 'post', { message: text }, function(response) {
   if (!response || response.error) {
     alert('Error occured');
   } else {
@@ -93,11 +107,42 @@ FB.api('/me/feed', 'post', { message: "Welcome to 8-Min App | App for Mixed news
       <fb:login-button scope="public_profile,publish_actions" onlogin="checkLoginState();">
       </fb:login-button>
       </div>
-	  <br>
-	  <div class="bg-primary btn-lg" style="max-width:400px;" onClick="post();">Post Welcome message on Timeline</div>
       <div id="status">
       </div>
    </div>
+   </center>
+</div>
+
+<div class="container" align="center" id="content" style="display:none">
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Moto X Force With ShatterShield Launched in India</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">Motorola has launched the Moto X Force smartphone in India, with a starting price of Rs. 49,999 for the 32GB variant, and Rs. 53,999 for the 64GB variant.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(Motorola has launched the Moto X Force smartphone in India, with a starting price of Rs. 49,999 for the 32GB variant, and Rs. 53,999 for the 64GB variant.);">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">LeEco to sell subsidised Le 1s smartphone on Flipkart tomorrow</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">Chinese electronics firm LeEco today said it will start selling its latest 4G smartphone Le 1s at subsidised rates on Flipkart from tomorrow.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(Chinese electronics firm LeEco today said it will start selling its latest 4G smartphone Le 1s at subsidised rates on Flipkart from tomorrow.);">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Volkswagen launches updated versions of Polo, Vento in India</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">German auto major Volkswagen today launched updated versions of its popular models Polo and Vento in India, priced between Rs 5.33 lakh to Rs 12.13 lakh (ex-showroom Delhi).</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(German auto major Volkswagen today launched updated versions of its popular models Polo and Vento in India, priced between Rs 5.33 lakh to Rs 12.13 lakh (ex-showroom Delhi).);">Post on Facebook</div>
+   </div>
+   </div>
+   <div class="col-md-3 a"><div class="box">
+   <h4 style="margin-top:0">Gionee P5W launched in India at a budget price of Rs. 6499</h4>
+   <p style="margin-left:5px;margin-right:5px;margin-top:0">Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow.</p>
+   <div class="bg-primary btn-lg" style="max-width:400px;border-radius:0 0 5px 5px;margin-bottom:0" onClick="post(Chinese Tech major Gionee has launched latest smartphone P5W in its Pioneer series, at a pocket-friendly price of Rs. 6,499 coming in 5 attractive colours such as white, black, blue, red and yellow.);">Post on Facebook</div>
+   </div>
+   </div>
+   
+</div>
+
+<div class="container">
+   <center>
    <div class="col-md-12 footer">
       <h4>&copy;2016 | <a href="Privacy Policy.html">Privacy Policy</a></h4>
    </div>
